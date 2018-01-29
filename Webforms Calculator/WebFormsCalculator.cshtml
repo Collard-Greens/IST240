@@ -1,7 +1,7 @@
 @{
 	if(IsPost){
-		int number1 = Convert.ToInt32(Request[number1]);
-		int number2 = Convert.ToInt32(Request[number2]);
+		int number1 = Convert.ToInt32(Request["number1"]);
+		int number2 = Convert.ToInt32(Request["number2"]);
 		int Answer;
 		string calc = (Request["calc"]);	
 		
@@ -32,7 +32,7 @@
 <html>
 <body> 
 
-	<form action='' method='get' class='speaker-form'>
+	<form action='' method='post'>
 		
 		<div class='number1'>
 			<label>First Number</label>
@@ -42,6 +42,34 @@
 			<label>Second Number</label>
 			<input id='number2' name='number2' type='text'/>
 		</div>
+		
+	<fieldset>
+		<legend>Type of Talk</legend>
+		<input id='add'
+			name='add'
+			type='radio'
+			value='add'
+			checked />
+		<label class='radio-label'>Addition</label>
+		<input id='multiply'
+			name='multiply'
+			type='radio'
+			value='multiply'
+			checked />
+		<label class='radio-label'>Multiplication</label>
+		<input id='divide'
+			name='divide'
+			type='radio'
+			value='divide'
+			checked />
+		<label class='radio-label'>Division</label>
+		<input id='subtract'
+			name='subtract'
+			type='radio'
+			value='subtract'
+			checked />
+		<label class='radio-label'>Subtraction</label>
+	</fieldset>
 		
 
 	</form>

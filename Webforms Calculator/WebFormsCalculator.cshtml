@@ -2,7 +2,7 @@
 	if(IsPost){
 		int number1 = Convert.ToInt32(Request["number1"]);
 		int number2 = Convert.ToInt32(Request["number2"]);
-		int answer;
+		int answer = 0;
 		string calc = (Request["calc"]);	
 		
 		 switch(calc)
@@ -20,6 +20,8 @@
 					answer = number1 - number2;
 					break;
 		}		
+		
+		<p> Answer: @answer </p>
 	}
 }
 
@@ -70,10 +72,6 @@
 	
 	<div class='form-row'>
 		<button>Calculate</button>
-		<div class='answer'>
-			<label>Answer</label>
-			<name='answer' type='text'/>
-		</div>
 	</div>	
 		
 	</form>

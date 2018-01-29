@@ -1,0 +1,49 @@
+@{
+	if(IsPost){
+		int number1 = Convert.ToInt32(Request[number1]);
+		int number2 = Convert.ToInt32(Request[number2]);
+		int Answer;
+		string calc = (Request["calc"]);	
+		
+		 switch(calc)
+		{
+				case "add":
+					input = number1 + number2;
+					break;
+				case "multiply":
+					input = number1 * number2;
+					break;
+				case "divide":
+					input = number1 / number2;
+					break;
+				case "subtract":
+					input = number1 - number2;
+					break;
+		}		
+	}
+}
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Calculator</title>
+  </head>  
+<html>
+<body> 
+
+	<form action='' method='get' class='speaker-form'>
+		
+		<div class='number1'>
+			<label>First Number</label>
+			<input id='number1' name='number1' type='text'/>
+		</div>
+		<div class='number2'>
+			<label>Second Number</label>
+			<input id='number2' name='number2' type='text'/>
+		</div>
+		
+
+	</form>
+</body>
+</html>

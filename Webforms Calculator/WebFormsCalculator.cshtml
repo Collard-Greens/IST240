@@ -2,22 +2,22 @@
 	if(IsPost){
 		int number1 = Convert.ToInt32(Request["number1"]);
 		int number2 = Convert.ToInt32(Request["number2"]);
-		int Answer;
+		int answer;
 		string calc = (Request["calc"]);	
 		
 		 switch(calc)
 		{
 				case "add":
-					input = number1 + number2;
+					answer = number1 + number2;
 					break;
 				case "multiply":
-					input = number1 * number2;
+					answer = number1 * number2;
 					break;
 				case "divide":
-					input = number1 / number2;
+					answer = number1 / number2;
 					break;
 				case "subtract":
-					input = number1 - number2;
+					answer = number1 - number2;
 					break;
 		}		
 	}

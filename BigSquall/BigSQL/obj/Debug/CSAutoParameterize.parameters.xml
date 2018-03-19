@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BookContext-Web.config Connection String" description="BookContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=bigserves.database.windows.net;&#xD;&#xA;           Initial Catalog=BigBase;&#xD;&#xA;           Persist Security Info=True;&#xD;&#xA;           User ID=BigAdmin;&#xD;&#xA;           Password=BigPa$$w0rd" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="T:\\BigSQL\\BigSQL\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BookContext']/@connectionString" />
+  </parameter>
+</parameters>
